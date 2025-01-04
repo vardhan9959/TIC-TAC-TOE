@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div id="home" class="home">
+        <h1>Tic Tac Toe</h1>
+        
+        <h2>Expanded Description of the Game</h2>
+        <p><strong>Introduction:</strong> Tic Tac Toe, also known as Noughts and Crosses or Xs and Os, is a classic two-player game that has been enjoyed by people of all ages for generations. Played on a simple 3x3 grid, it is easy to learn and can be played almost anywhere, making it a popular choice for casual play.</p>
+        
+        <p><strong>History:</strong> The origins of Tic Tac Toe can be traced back to ancient civilizations. The earliest known version of the game dates back to ancient Egypt around 1300 BC. The modern version we know today became popular in the 19th century. The game is often used as an educational tool to teach children about strategy, critical thinking, and sportsmanship.</p>
+
+        <p><strong>Game Setup:</strong></p>
+        <ul>
+            <li><strong>Players:</strong> The game is played between two players.</li>
+            <li><strong>Symbols:</strong> One player uses "X" and the other uses "O".</li>
+            <li><strong>Grid:</strong> The game is played on a 3x3 grid, which consists of nine cells.</li>
+        </ul>
+
+        <p><strong>Rules:</strong></p>
+        <ul>
+            <li>Players take turns placing their symbols in an empty cell on the grid.</li>
+            <li>The objective is to be the first player to get three of their symbols in a row—this can be achieved horizontally, vertically, or diagonally.</li>
+            <li>If all cells are filled and no player has achieved three in a row, the game ends in a draw.</li>
+        </ul>
+
+        <p><strong>Variations:</strong></p>
+        <ul>
+            <li><strong>Larger Grids:</strong> Players can play on larger grids (e.g., 4x4 or 5x5) where they need to get four or five symbols in a row to win.</li>
+            <li><strong>Different Shapes:</strong> Some variations use different shapes instead of a grid, such as circles or triangles.</li>
+            <li><strong>Timed Games:</strong> Players can set a time limit for each turn to increase the game's pace and excitement.</li>
+        </ul>
+
+        <p><strong>Strategies:</strong></p>
+        <ul>
+            <li><strong>Control the Center:</strong> Always try to place your symbol in the center cell if it's available. This position gives you the most options for creating winning combinations.</li>
+            <li><strong>Block Your Opponent:</strong> If your opponent is about to win by placing their symbol in a row, column, or diagonal, make sure to block them by placing your symbol in that cell.</li>
+            <li><strong>Create Forks:</strong> A fork occurs when you create two opportunities to win on your next turn. This forces your opponent into a defensive position.</li>
+            <li><strong>Play for a Draw:</strong> If you cannot win, aim for a draw by blocking your opponent's winning moves.</li>
+        </ul>
+
+        <p><strong>Benefits of Playing Tic Tac Toe:</strong></p>
+        <ul>
+            <li><strong>Cognitive Development:</strong> The game encourages strategic thinking and problem-solving skills.</li>
+            <li><strong>Social Interaction:</strong> It provides an opportunity for social interaction and bonding between players.</li>
+            <li><strong>Easy Accessibility:</strong> It requires minimal equipment—just paper and pencil or a simple digital interface—making it easy to play anywhere.</li>
+            <li><strong>Fun and Engaging:</strong> The quick nature of the game makes it fun and engaging for players of all ages.</li>
+        </ul>
+
+        <button id="understandButton">I Understand</button>
+    </div>
+
+    <div id="game" class="tic-tac-toe" style="display: none;">
+        <h1>Tic Tac Toe</h1>
+        <div id="board" class="board">
+            <!-- Cells for Tic Tac Toe -->
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <!-- Reset button -->
+        <button id="resetButton">Play Again</button>
+
+        <!-- Message display -->
+        <p id="message"></p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+
+    <!-- Inline script for handling button click -->
+    <script>
+        // Show the game when the user understands the rules
+        document.getElementById('understandButton').addEventListener('click', function() {
+            document.getElementById('home').style.display = 'none'; // Hide home section
+            document.getElementById('game').style.display = 'block'; // Show game section
+        });
+    </script>
+
+</body>
+</html>
+
