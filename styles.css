@@ -1,0 +1,74 @@
+/* CSS Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in height/width calculations */
+}
+
+.home {
+    background-color: #ffcccb; /* Light pink background for home section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left for better readability */
+    max-width: 600px; /* Set a maximum width for better layout */
+    width: 100%; /* Allow full width up to max-width */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    height: 80vh; /* Set a fixed height to prevent overflow */
+}
+
+.tic-tac-toe {
+    background-color: #fff; /* White background for the game section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in game section */
+    max-width: 600px; /* Set a maximum width for better layout */
+    width: 100%; /* Allow full width up to max-width */
+}
+
+h1, h2 {
+    margin-bottom: 10px; /* Add space below headings */
+}
+
+ul {
+    margin-left: 20px; /* Indent list items for clarity */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #4caf50; /* Green border */
+    cursor: pointer;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green button */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green button on hover */
+}
